@@ -21,3 +21,15 @@
 
 // (Correct answer: 12586269025)
 // (The numbers get big quickly!)
+
+let first = 0;
+let second = 1;
+let total;
+
+for (let i = 0; i < 49; i++) {
+    total = first + second;
+    first = second;
+    second = total;
+}
+
+console.log(total);
