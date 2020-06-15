@@ -11,3 +11,16 @@
 // _#_#_#_#
 // #_#_#_#_
 // _#_#_#_#
+
+
+let row = '#_#_#_#_';
+let revRow;
+let newRow;
+
+for (let i = 0; i < 8; i++) {
+    console.log(row);
+    newRow = row.split('');
+    revRow = newRow.reverse();
+    row = revRow.join('');
+
+}
