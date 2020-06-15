@@ -12,3 +12,20 @@
 // NOTE: 1 and 2 are both prime numbers.
 
 // EXPECTED OUTPUT: [1, 2, 3, 5, 7, 11, 13, ...]
+
+let prime;
+
+for (let i = 1; i <= 13; i++) {
+    prime = true;
+    for (let j = 1; j <= i; j++) {
+        if (i % j == 0) {
+            if (j != 1 && j != i) {
+                prime = false;
+                break;
+            }
+        }
+    }
+
+    if (prime)
+        console.log(i);
+}
