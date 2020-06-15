@@ -9,3 +9,15 @@
 // ...
 
 // many other possibilities here.
+
+let state;
+
+for (let i = 0; i <= 15; i++) {
+    if (i % 2 === 0) {
+        state = 'even';
+    } else {
+        state = 'odd';
+    }
+
+    console.log(`${i} is ${state}`);
+}
